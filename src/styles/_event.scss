@@ -1,0 +1,112 @@
+.event {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    ;
+    justify-content: center;
+
+    &::after {
+        content: '';
+
+        width: inherit;
+        height: inherit;
+        position: fixed;
+        inset: 0;
+        z-index: -1;
+
+        background-image: url(./img/background/—Pngtree—celebration\ background\ with\ confetti\ and_9140170.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__info {
+
+        display: flex;
+        flex-direction: column;
+
+
+        img {
+            margin-top: 100px;
+            margin-bottom: 50px;
+            width: 400px;
+
+            @media (max-width: 767px) {
+                width: 200px;
+            }
+        }
+
+        p {
+            font-size: 30px;
+
+            @media (max-width: 767px) {
+                font-size: 24px;
+
+            }
+
+
+            margin-bottom: 30px;
+        }
+
+
+        &__date {
+
+
+            margin-bottom: 48px;
+            padding: 20px;
+
+            ul {
+                display: flex;
+                height: 100px;
+                width: 900px;
+
+                background: rgba(37, 37, 37, 0.4);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(13px);
+                -webkit-backdrop-filter: blur(13px);
+                border-radius: 50px;
+
+                border: 5px solid rgba($color: #000000, $alpha: 0.2);
+
+                align-items: center;
+                text-align: center;
+
+                @media (max-width: 1023px) {
+                    width: 600px;
+
+                }
+
+                @media (max-width: 767px) {
+                    width: 250px;
+                    height: 250px;
+
+                    flex-direction: column;
+
+                }
+
+                & li {
+                    @media (max-width: 767px) {
+                        padding: 20px;
+                    }
+                }
+
+                .button-confirm {
+                    width: 100px;
+                    height: 50px;
+                    background-color: #F7AC0E;
+
+                    border: 2px solid #F7AC0E;
+                    border-radius: 30px;
+
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #df9d0d;
+                    }
+
+                }
+            }
+        }
+    }
+}

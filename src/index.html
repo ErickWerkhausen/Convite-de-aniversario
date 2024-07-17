@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.scss">
+</head>
+
+<body>
+    <section class="event">
+        <div class="event__info">
+            <img src="./styles/img/logo/pngwing.com (1).png" alt="Happy Birthday">
+            <p>O grande dia está perto <span id="contador"></span></p>
+        </div>
+        <div class="event__info__date">
+            <ul>
+                <li>Data:
+                    <br>
+                    23/07/2024
+                </li>
+                <li>Local:
+                    <br>
+                    Rua Frederico Pott
+                </li>
+                <button class="button-confirm" onclick="openModal()"> Comfirmar</button>
+            </ul>
+        </div>
+        <div class="container function-modal">
+            <div class="container__modal">
+                <h2>Convite</h2>
+                <hr>
+                <span class="container__modal__info">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, provident molestiae? Obcaecati
+                    quae, excepturi molestias sunt alias velit ab autem explicabo magnam, officiis, blanditiis neque
+                    debitis. Harum officiis quaerat illo.
+
+                </span>
+                <hr>
+                <div class="btns">
+                    <button class="btns__btnOK" onclick="closeModal()">
+                        OK
+                    </button>
+                    <button class="btns__btnClose" onclick="closeModal()">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/modal.js"></script>
+</body>
+
+</html>

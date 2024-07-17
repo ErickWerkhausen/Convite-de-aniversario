@@ -1,0 +1,20 @@
+@use 'event';
+@use 'modal';
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: rgb(6,36,241);
+    background: radial-gradient(circle, rgba(6,36,241,1) 7%, rgba(5,26,178,1) 28%, rgba(2,17,126,1) 51%, rgba(4,15,102,1) 71%, rgba(2,8,56,1) 100%);
+
+    color: #F7AC0E;
+}
+
+
+
